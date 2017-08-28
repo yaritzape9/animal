@@ -1,0 +1,19 @@
+staff report<br>
+_________________________________________________
+<table style='border:solid black 1px; padding:3px'>
+<tr>
+<th>Name</th>
+<th>Salary</th>
+<th>Total Animals cared for</th>
+</tr>
+
+<% @employees.each do |employee| %>
+<tr>
+
+<td><%= employee.name %></td><br>
+
+<td><%= employee.salary %></td>
+
+</tr>
+<% end %>
+</table>

@@ -1,0 +1,8 @@
+Cages <br>
+____________________________________
+<br>
+<% @cages.each do |cage| %>
+
+<%=link_to cage.name , cage_path(cage.id)%><br>
+
+<%end%>

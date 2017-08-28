@@ -1,0 +1,8 @@
+Cage page <br>_________________________ <br>
+<%= @cage.name %><br>
+Assigned employee: <%= @cage.employee.name%><br>
+
+occupants: <% @cage.animalls.each do |animal| %>
+            <br>  <%=animal.name%><br>
+
+              <%end%>
